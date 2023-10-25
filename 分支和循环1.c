@@ -103,4 +103,122 @@ int g;//语句
 //	return 0;
 //}
 
-//循环
+////while循环
+//int main()
+//{
+//	int i = 0;
+//	while (i <= 10)
+//	{
+//		if (i == 5)
+//			continue;//提前结束本次循环，开始下一次循环
+//		if (i == 6)
+//			break;//终止所有循环
+//		printf("%d", i);
+//		i++;
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int ch;
+//	while ((ch = getchar()) != EOF)//EOF   end of file = -1
+//	{
+//		if (ch < '0' || ch>'9')
+//			continue;
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+
+////输入缓冲区
+//int main()
+//{
+//	int cfm = 0;
+//	char password[20] = { 0 };
+//	scanf("%s", &password);//    输入缓冲区 是 行缓冲区遇到\n停止   123456\n
+//	cfm = getchar();//           scanf 拿走了123456剩下\n   getchar 直接读取了\n  导致错误
+//	if (cfm == 'T')
+//		printf("已确认");
+//	else
+//		printf("已取消确认");
+//	return 0;
+//}
+
+////清空输入缓冲区
+//int main()
+//{
+//	int cfm = 0, ch = 0;
+//	char password[20] = { 0 };
+//	scanf("%s", &password);//输入空格' '时，scanf读取结束，导致需要不止一次清除缓冲区
+//	while ((ch = getchar()) != '\n')
+//	{
+//		;
+//	}
+//	cfm = getchar();
+//	if (cfm == 'T')
+//		printf("已确认");
+//	else
+//		printf("已取消确认");
+//	return 0;
+//}
+
+//for  优势：循环变量的集中初始化，判断，调整
+//int main()
+//{
+//	int i;
+//	for (i = 1; i <= 10; i++, i++)
+//	{
+//		if (i == 5)
+//			continue;//并不会死循环，说明i++在循环开始时执行
+//		printf("%d", i);
+//	}
+//	printf("%d", i);
+//	return 0;
+//}
+
+////在for{}内改变循环变量可能导致死循环；   左闭右开可读性高
+//int main()
+//{
+//	int a[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int i;
+//	for (i = 0; i < 10; i++)   //要输出数组a的10个数，则要循环10次。  循环次数=10-0=10  若写为i<=9  循环次数=9+1-0=10
+//	{                          //1到10是10个数（数数），而10与1的差是9（减法），这就是闭‘<=’与开‘<’计数的区别    计算循环次数一般用减法
+//		printf("%d", a[i]);
+//		i = 5;//寄
+//	}
+//}
+
+////两种死循环
+//int main()
+//{
+//	int i = 0;
+//	for (; i = 3; i++)//== 写成 =  赋值表达式的值就是i
+//		printf("o.O ");
+//	for (;;)//判断为空 恒为真 o.O
+//		printf("o.O ");
+//	return 0;
+//}
+
+////嵌套循环
+//int main()
+//{
+//	int i = 0, j = 0;
+//	for (; i < 10; i++)
+//		for (j = 0; j < 10; j++)
+//			printf("一百次 ");
+//	return 0;
+//}
+
+////do while 循环
+//int main()
+//{
+//	int i = 1;
+//	do//至少执行一次
+//	{
+//		printf("%d", i);
+//		i++;
+//	} 
+//	while (i < 11);
+//	return 0;
+//}
