@@ -3,6 +3,7 @@
 #include<string.h>
 #include<Windows.h>
 #include<stdlib.h>
+#include<math.h>
 
 ////n的阶乘 
 //int main()
@@ -130,3 +131,169 @@
 //	}
 //	return 0;
 //}
+
+////从大到小输出三个数
+//int main()
+//{
+//	int a, b, c, t;
+//	scanf("%d%d%d", &a, &b, &c);
+//	if (a < b)
+//	{
+//		t = b;
+//		b = a;
+//		a = t;
+//	}
+//	if (a < c)
+//	{
+//		t = c;
+//		c = a;
+//		a = t;
+//	}
+//	if (b < c)
+//	{
+//		t = c;
+//		c = b;
+//		b = t;
+//	}
+//	printf("%d>=%d>=%d", a, b, c);
+//	return 0;
+//}
+
+////从大到小输出三个数 函数???
+//void cp(int x,int y)
+//{
+//	int t;
+//	if (x < y)
+//	{
+//		t = y;
+//		y = x;
+//		x = t;
+//	}
+//}
+//int main()
+//{
+//	int a, b, c;
+//	scanf("%d%d%d", &a, &b, &c);
+//	cp(a, b);
+//	cp(a, c);
+//	cp(b, c);
+//	printf("%d>=%d>=%d", a, b, c);
+//	return 0;
+//}
+
+////最大公约数  辗转相除法
+//int main()
+//{
+//	int a, b, r;
+//	scanf("%d%d", &a, &b);
+//	if (a < b)
+//	{
+//		r = b;
+//		b = a;
+//		a = r;
+//	}
+//	while (r = a % b)
+//	{
+//		a = b;
+//		b = r;
+//	}
+//	printf("%d", b);
+//	return 0;
+//}
+
+////素数 试除法
+//int main()
+//{
+//	int i, j;
+//	for (i = 100; i <= 200; i++)//     for (i = 101; i <= 199; i += 2)
+//	{
+//		for (j = 2; j <= sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//				break;
+//		}
+//		if (j > sqrt(i))
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+
+//素数  筛法
+
+////数1~100中9的个数  （如何计十位数，个位数）
+//int main()
+//{
+//	int i,n;
+//	for (i = 1,n = 0; i <= 100; i++)
+//	{
+//		if (i % 10 == 9)
+//		{
+//			n++;
+//		}
+//		if (i / 10 == 9)
+//		{
+//			n++;
+//		}
+//	}
+//	printf("%d", n);
+//}
+
+////   1/1-1/2+1/3-1/4+...........+1/100
+//int main()
+//{
+//	int i, t;
+//	float sum;
+//	for (i = 1, t = 1, sum = 0.0; i <= 100; i++)
+//	{
+//		sum += (1.0 / i) * t;
+//		t *= -1;
+//	}
+//	printf("%f", sum);
+//	return 0;
+//}
+
+////找出10个数中最大的数    ？？能否演化为排序
+//int main()
+//{
+//	int a[10] = { 5,6,1,3,8,9,4,2,0,7 };
+//	int j = 1,t = 0;
+//	while (j<=9)
+//	{
+//
+//		if (a[0] < a[j])
+//		{
+//			t = a[j];
+//			a[j] = a[0];
+//			a[0] = t;
+//		}
+//		else j++;
+//	}
+//	printf("%d", a[0]);
+//	return 0;
+//}
+
+////99乘法表
+//int main()
+//{
+//	int i = 1, j = 1;
+//	while (i <= 9)
+//	{
+//		j = 1;
+//		while (j <= i)
+//		{
+//			printf("%d*%d=%-2d  ", j, i, i * j);//  %-2d 2位数向左对其 整齐  
+//			j++;
+//		}
+//		printf("\n\n");
+//		i++;
+//	}
+//	return 0;
+//}
+
+//猜数字游戏
+int main()
+{
+	time_t
+}
