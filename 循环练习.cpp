@@ -4,6 +4,7 @@
 #include<Windows.h>
 #include<stdlib.h>
 #include<math.h>
+#include<time.h>
 
 ////n的阶乘 
 //int main()
@@ -292,8 +293,45 @@
 //	return 0;
 //}
 
-//猜数字游戏
-int main()
-{
-	time_t
-}
+////猜数字游戏
+//void menu()
+//{
+//	printf("--------猜数字-------\n");
+//	printf("-----按1开始游戏-----\n");
+//	printf("-----按0结束游戏-----\n");
+//}
+//int main()
+//{
+//	int input, answer;
+//	do
+//	{
+//		srand((unsigned int)time(NULL));//以时间戳作为起点   MSDN
+//		answer = rand()%100+1;
+//		menu();
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 0:
+//			break;
+//		case 1:
+//			while (1)
+//			{
+//				printf("输入一个数字：\n");
+//				scanf("%d", &input);
+//				if (input < answer)
+//					printf("小了\n");
+//				else if (input > answer)
+//					printf("大了\n");
+//				else if (input == answer)
+//				{
+//					printf("对了\n");
+//					break;
+//				}
+//			}
+//			break;
+//		default:printf("输入错误\n");
+//			break;
+//		}
+//	} while (input);
+//		return 0;
+//}

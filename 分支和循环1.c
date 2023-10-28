@@ -28,7 +28,7 @@ int g;//Óï¾ä
 //	return 0;
 //}
 
-//return
+////return
 //int main()
 //{
 //	int x = 5, y = -1;
@@ -222,3 +222,13 @@ int g;//Óï¾ä
 //	while (i < 11);
 //	return 0;
 //}
+
+//goto
+int main()
+{
+	goto two;
+	printf("11111111\n");
+two:
+	printf("22222222\n");
+	return 0;
+}
