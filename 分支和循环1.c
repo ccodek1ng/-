@@ -223,12 +223,12 @@ int g;//Óï¾ä
 //	return 0;
 //}
 
-//goto
-int main()
-{
-	goto two;
-	printf("11111111\n");
-two:
-	printf("22222222\n");
-	return 0;
-}
+////goto   ÊÊºÏÌø³öÉî²ãÇ¶Ì×
+//int main()
+//{
+//	goto two;
+//	printf("11111111\n");
+//two:
+//	printf("22222222\n");
+//	return 0;
+//}

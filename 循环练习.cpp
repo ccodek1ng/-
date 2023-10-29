@@ -335,3 +335,22 @@
 //	} while (input);
 //		return 0;
 //}
+
+////关机程序   服务
+//int main()
+//{
+//	char input[20] = { 0 };
+//	system("shutdown -s -t 60");
+//again:
+//	printf("1分钟内关机，叫“爸爸”取消：\n");
+//	scanf("%s", &input);
+//	if (strcmp(input, "爸爸") == 0)
+//	{
+//		system("shutdown -a");
+//	}
+//	else
+//	{
+//		goto again;
+//	}
+//	return 0;
+//}
